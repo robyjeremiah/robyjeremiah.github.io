@@ -8,55 +8,96 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Welcome to My Portfolio</h1>
-            <nav>
-                <a href="#about">About Me</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
+    <header class="wp-block-template-part is-stuck">
+        <div class="wp-block-group has-contrast-color has-primary-background-color has-text-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+            <div class="wp-block-group alignwide is-content-justification-space-between is-layout-flex wp-container-core-group-layout-1 wp-block-group-is-layout-flex" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+                <div class="wp-block-site-logo">
+                    <a href="#" class="custom-logo-link" rel="home">
+                        <img src="logo.svg" class="custom-logo" alt="Your Name" decoding="async">
+                    </a>
+                </div>
+                <nav class="items-justified-right no-wrap wp-block-navigation is-content-justification-right is-nowrap is-layout-flex wp-container-core-navigation-layout-1 wp-block-navigation-is-layout-flex" aria-label="Navigation">
+                    <ul class="wp-block-navigation__container items-justified-right no-wrap wp-block-navigation">
+                        <li class="wp-block-navigation-item current-menu-item wp-block-navigation-link">
+                            <a class="wp-block-navigation-item__content" href="#about"><span class="wp-block-navigation-item__label">About</span></a>
+                        </li>
+                        <li class="wp-block-navigation-item wp-block-navigation-link">
+                            <a class="wp-block-navigation-item__content" href="#projects"><span class="wp-block-navigation-item__label">Projects</span></a>
+                        </li>
+                        <li class="wp-block-navigation-item wp-block-navigation-link">
+                            <a class="wp-block-navigation-item__content" href="#contact"><span class="wp-block-navigation-item__label">Contact</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-    <section id="hero">
-        <div class="hero-content">
-            <h2>Hello, I'm a Full-Stack Developer</h2>
-            <p>Crafting modern web experiences</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-    </section>
-    <section id="about" class="section about-section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I'm a passionate developer with expertise in full-stack development. I enjoy building web applications and learning new technologies.</p>
-        </div>
-    </section>
-    <section id="projects" class="section projects-section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project 1: Awesome App</h3>
-                <p>A description of your project.</p>
-                <a href="https://github.com/username/project1" target="_blank">GitHub Repository</a>
-                <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/video_id1" frameborder="0" allowfullscreen></iframe>
+    <main class="wp-block-group is-layout-flow wp-block-group-is-layout-flow" style="margin-top:var(--wp--preset--spacing--50)" id="wp--skip-link--target">
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Hello, I'm a Full-Stack Developer</h2>
+                <p>Crafting modern web experiences</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </section>
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I'm a passionate developer with expertise in full-stack development. I enjoy building web applications and learning new technologies.</p>
+            </div>
+        </section>
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Project 1: Awesome App</h3>
+                    <p>A description of your project.</p>
+                    <a href="https://github.com/username/project1" target="_blank">GitHub Repository</a>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/video_id1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>Project 2: Cool Library</h3>
+                    <p>A description of your project.</p>
+                    <a href="https://github.com/username/project2" target="_blank">GitHub Repository</a>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/video_id2" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
-            <div class="project">
-                <h3>Project 2: Cool Library</h3>
-                <p>A description of your project.</p>
-                <a href="https://github.com/username/project2" target="_blank">GitHub Repository</a>
-                <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/video_id2" frameborder="0" allowfullscreen></iframe>
-                </div>
+        </section>
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/username" target="_blank">Your LinkedIn</a></p>
             </div>
-        </div>
-    </section>
-    <footer id="contact" class="section contact-section">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/username" target="_blank">Your LinkedIn</a></p>
+        </section>
+    </main>
+    <footer class="wp-block-template-part">
+        <div class="wp-block-group has-contrast-background-color has-text-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:1.5rem;padding-bottom:2rem">
+            <div class="wp-block-group alignwide is-content-justification-space-between is-layout-flex wp-container-core-group-layout-8 wp-block-group-is-layout-flex">
+                <ul class="wp-block-social-links has-icon-background-color is-style-default is-layout-flex wp-block-social-links-is-layout-flex">
+                    <li class="wp-social-link wp-social-link-github has-primary-background-color wp-block-social-link">
+                        <a rel="noopener nofollow" target="_blank" href="https://github.com/your-github" class="wp-block-social-link-anchor">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                <path d="..."></path>
+                            </svg>
+                            <span class="wp-block-social-link-label screen-reader-text">GitHub</span>
+                        </a>
+                    </li>
+                    <li class="wp-social-link wp-social-link-linkedin has-primary-background-color wp-block-social-link">
+                        <a rel="noopener nofollow" target="_blank" href="https://www.linkedin.com/in/your-linkedin" class="wp-block-social-link-anchor">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                <path d="..."></path>
+                            </svg>
+                            <span class="wp-block-social-link-label screen-reader-text">LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="has-text-align-right has-small-font-size">Copyright © 2023 Your Name</p>
+            </div>
         </div>
     </footer>
 </body>

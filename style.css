@@ -17,7 +17,7 @@ header {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-header .container {
+header .wp-block-group {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,9 +26,8 @@ header .container {
     padding: 0 1em;
 }
 
-header h1 {
-    margin: 0;
-    font-weight: 300;
+header .custom-logo-link img {
+    max-height: 50px;
 }
 
 header nav a {
@@ -135,6 +134,21 @@ header nav a:hover {
 
 .project a:hover {
     text-decoration: underline;
+}
+
+footer .wp-block-group {
+    background-color: #333;
+    color: #888;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+footer .wp-block-group ul {
+    display: flex;
+}
+
+footer .wp-social-link {
+    margin-right: 1em;
 }
 
 footer a {
