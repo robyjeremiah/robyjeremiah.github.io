@@ -1,150 +1,221 @@
-/* Import the Poppins font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+/* =============================
+   Base Styling and Font Import
+============================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f0f2f5; /* Soft light background */
-  color: #2c3e50; /* Dark navy text */
-  line-height: 1.6;
-  padding-bottom: 2em;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+    background-color: #f0f4f8; /* soft light gray-blue */
 }
 
-/* Container for layout consistency */
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-/* Header Styling */
+/* =============================
+   Header
+============================= */
 header {
-  background-color: #1f2937; /* Dark slate */
-  color: #ffffff;
-  padding: 1em 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    background-color: #1f2937; /* dark slate gray */
+    color: white;
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 1.8em;
-  text-align: center;
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.8em;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  margin-top: 0.5em;
+header nav a {
+    margin: 0 1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  margin: 0 1em;
-  font-weight: 600;
-  transition: color 0.3s;
+header nav a:hover {
+    color: #00bcd4; /* cyan highlight */
 }
 
-nav a:hover {
-  color: #007bff; /* Blue hover effect */
+/* =============================
+   Hero Section (optional)
+============================= */
+#hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 10em 1em;
+    position: relative;
 }
 
-/* Section Styling */
-section {
-  padding: 3em 0;
+#hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
 }
 
-section h2 {
-  font-size: 2em;
-  margin-bottom: 1em;
-  color: #1f2937;
-  text-align: center;
+#hero .hero-content {
+    position: relative;
+    z-index: 1;
 }
 
-/* Skills List */
-ul {
-  list-style-type: disc;
-  padding-left: 1.5em;
+#hero h2 {
+    font-size: 2.5em;
+    margin: 0.5em 0;
 }
 
-li {
-  margin-bottom: 0.5em;
+#hero p {
+    font-size: 1.2em;
 }
 
-/* Project Card Styling */
+.btn {
+    background-color: #00bcd4;
+    color: white;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0097a7;
+}
+
+/* =============================
+   Section Base
+============================= */
+.section {
+    padding: 4em 1em;
+    margin: 1em auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+/* =============================
+   About Me Section
+============================= */
+.about-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* =============================
+   Projects Section
+============================= */
+.projects-section {
+    background-color: #e9f3f9;
+}
+
 .project {
-  background-color: #ffffff;
-  border-radius: 10px;
-  padding: 1.5em;
-  margin-bottom: 2em;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s;
+    margin: 2em 0;
+    background: white;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
 }
 
 .project:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .project h3 {
-  margin-top: 0;
-  color: #007bff;
+    margin-bottom: 0.5em;
+    color: #007acc;
+}
+
+.project .video {
+    margin-top: 1em;
 }
 
 .project a {
-  display: inline-block;
-  margin-top: 0.5em;
-  color: #007bff;
-  text-decoration: none;
-  font-weight: 600;
+    color: #007acc;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .project a:hover {
-  color: #0056b3;
+    text-decoration: underline;
 }
 
-/* Embedded video */
-.project iframe {
-  width: 100%;
-  height: 300px;
-  margin-top: 1em;
-  border: none;
-  border-radius: 8px;
-}
-
-/* Footer Styling */
-footer {
-  background-color: #1f2937;
-  color: #ffffff;
-  padding: 2em 0;
-  text-align: center;
+/* =============================
+   Contact / Footer Section
+============================= */
+.contact-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer a {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: 600;
+    color: #007acc;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 footer a:hover {
-  color: #0056b3;
+    text-decoration: underline;
 }
 
-/* Responsive Design */
+/* =============================
+   Responsive Design
+============================= */
 @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    gap: 0.5em;
-  }
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-  .project iframe {
-    height: 200px;
-  }
+    header nav {
+        margin-top: 1em;
+    }
+
+    header nav a {
+        margin: 0.5em 0;
+    }
+
+    .project iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    #hero {
+        padding: 6em 1em;
+    }
+
+    #hero h2 {
+        font-size: 2em;
+    }
 }
